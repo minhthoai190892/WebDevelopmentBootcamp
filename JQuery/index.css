@@ -34,3 +34,11 @@ form label{
     padding: 3px 0;
     color: #222;
 }
+input[type="image"]{
+    height: 200px;
+    width: 200px;
+}
+input[type="radio"],input[type="checkbox"]{
+    display: inline-block;
+    width: 5%;
+}

@@ -1,30 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Simple Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
 
 <body>
     <form>
-        <a href="https://funix.udemy.com/course/create-dynamic-web-forms-with-jquery/learn/lecture/29196624#overview">link hoc</a>
+        <div>
+            <input type="search" name="search" id="search"><br>
+            <input type="tel" name="val1" id="val1"><br>
+            <input type="url" name="val2" id="val2"><br>
+            <input type="number" name="val3" id="val3" min="5" max="100" step="10"><br>
+        </div>
+        <div>
+            <label for="slider">You select</label>
+            <input type="range" name="slider" id="slider" min="100" max="500" step="10" value="250">
+        </div>
+        <div>
+            <input type="datetime-local" name="val4" id="val4"><br>
+            <input type="month" name="val5" id="val5"><br>
+            <input type="time" name="val6" id="val6"><br>
+            <input type="date" name="val7" id="val7" min="2020-01-01" max="2024-01-01"><br>
+        </div>
+        <div>
+            <input type="color" name="val8" id="val8"><br>
+            <input type="password" name="val9" id="val9"><br>
+        </div>
         <div>
             <label for="user">Name:</label>
-            <input type="text" id="user" name="user">
+            <input type="text" id="user" name="user" value="Laurence">
+        </div>
+        <div>
+            <input type="radio" id="r1" name="radioV" value="one"><label for="r1">one</label>
+            <input type="radio" id="r2" name="radioV" value="two"><label for="r2">two</label>
+            <input type="radio" id="r3" name="radioV" value="three"><label for="r3">three</label>
+        </div>
+        <div>
+            <input type="checkbox" id="c1" name="checkV" value="one"><label for="c1">one</label>
+            <input type="checkbox" id="c2" name="checkA" value="two"><label for="c2">two</label>
+        </div>
+        <div>
+            <input type="file"><input type="image" src="http://www.discoveryvip.com/img/d.png" alt="submit button">
         </div>
         <div>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" multiple>
         </div>
         <div>
             <label for="message">Message:</label>
             <textarea id="message" name="message"></textarea>
         </div>
         <div>
+            <input type="reset">
+            <input type="button" value="Say Hello">
+            <input type="submit">
             <button type="submit">Submit Request</button>
         </div>
     </form>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+<a href="https://funix.udemy.com/course/create-dynamic-web-forms-with-jquery/learn/lecture/29196624#overview">
+    link hoc</a>
