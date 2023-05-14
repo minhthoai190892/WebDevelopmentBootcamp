@@ -8,10 +8,11 @@
 
 <body>
     <form>
-        <a href="https://funix.udemy.com/course/create-dynamic-web-forms-with-jquery/learn/lecture/29196624#overview">link hoc</a>
+        <a href="https://funix.udemy.com/course/create-dynamic-web-forms-with-jquery/learn/lecture/29196624#overview">link
+            hoc</a>
         <div>
             <label for="user">Name:</label>
-            <input type="text" id="user" name="user">
+            <input type="text" id="user" name="user" placeholder="asd">
         </div>
         <div>
             <label for="email">Email:</label>
@@ -20,6 +21,60 @@
         <div>
             <label for="message">Message:</label>
             <textarea id="message" name="message"></textarea>
+        </div>
+        <div>
+            <label for="email">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="silder">Silder:</label>
+            <input type="range" min="10" max="500" value="100" id="silder" name="silder">
+        </div>
+
+
+        <div>
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div>
+            <label for="meeting-time">Choose a time for your appointment:</label>
+
+            <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+                min="2018-06-07T00:00" max="2018-06-14T00:00">
+        </div>
+        <div>
+            <label for="time">time:</label>
+            <input type="time" id="time" name="time">
+        </div>
+        <div>
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month">
+        </div>
+        <div >
+            <div class="radio">
+                <label for="r1">One:</label>
+            <input type="radio"  id="r1" name="r1">
+            
+           
+            <label for="r2">Two:</label>
+            <input type="radio" id="r2" name="r2">
+           </div>
+        </div>
+        <div class="checkbox">
+            <label for="c1">One:</label>
+            <input type="checkbox" checked id="c1" name="c1">
+            <label for="c2">Two:</label>
+            <input type="checkbox" id="c2" name="c2">
+        </div>
+        <div>
+            <input type="file" name="" id="">
+            <input type="image" src="https://images.unsplash.com/photo-1636522637419-50322e27b0a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8eGpQUjRobGtCR0F8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" name="" id="">
+        </div>
+
+        <div>
+            <button type="reset">Submit Reset</button>
         </div>
         <div>
             <button type="submit">Submit Request</button>
