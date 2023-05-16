@@ -34,3 +34,6 @@ function looper(data){
     });
     $(".output").html(html);
 }
+
+
+
