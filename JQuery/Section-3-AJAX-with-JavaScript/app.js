@@ -33,3 +33,6 @@ function reqData(){
     
 // }
 btn.onclick = reqData;
+
+
+
