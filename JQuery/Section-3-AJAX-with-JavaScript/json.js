@@ -324,3 +324,7 @@ function outputData1(vals) {
         console.log(element.name.first, index);
     });
 }
+
+
+
+
