@@ -15,8 +15,17 @@ function reqData(){
     const xhr = new XMLHttpRequest();
     xhr.addEventListener('load',output)
     xhr.open("GET",url);
+    //thay đổi trạng thái status
+    xhr.onreadystatechange = ()=>{
+        console.log(`RS: ${xhr.readyState}`);
+    }
+    xhr.onload =function(){
+        console.log(`Done: ${xhr.readyState}`);
+        console.log(this.responseText);
+    }
     xhr.send();
-    console.log(xhr);
+
+    console.log(xhr.readyState);
 }
 
 // btn.onclick = ()=>{
