@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <form>
+    <form action="index.html" method="post" autocomplete="on" id="form1">
         <div>
             <input type="search" name="search" id="search"><br>
             <input type="tel" name="val1" id="val1"><br>
-            <input type="url" name="val2" id="val2"><br>
+            <input type="url" name="val2" id="val2" readonly value="https://google.com"><br>
             <input type="number" name="val3" id="val3" min="5" max="100" step="10"><br>
         </div>
         <div>
@@ -33,7 +33,7 @@
         </div>
         <div>
             <label for="user">Name:</label>
-            <input type="text" id="user" name="user" value="Laurence">
+            <input type="text" id="user" name="user" value="Laurence" maxlength="10">
         </div>
         <div>
             <input type="radio" id="r1" name="radioV" value="one"><label for="r1">one</label>
@@ -47,6 +47,31 @@
         <div>
             <input type="file"><input type="image" src="http://www.discoveryvip.com/img/d.png" alt="submit button">
         </div>
+        <fieldset>
+            <label for="sel">Pick One</label>
+            <select name="sel" id="sel" size="2" multiple>
+                <option value="one">One</option>
+                <option value="one1">One1</option>
+                <option value="one2">One2</option>
+                <option value="one3">One3</option>
+                <option value="one4">One4</option>
+                <option value="one5">One5</option>
+            </select>
+        <div>
+            <label for="pattern">Pattern</label>
+            <input type="text" pattern="([A-Z]{3})" placeholder="Upper Case 3">
+        </div>
+        <input list="datal">
+        <datalist id="datal">
+            <option value="one"></option>
+            <option value="one1"></option>
+            <option value="one2"></option>
+            <option value="one3"></option>
+            <option value="one4"></option>
+            <option value="one5"></option>
+        </datalist>
+        </fieldset>
+
         <div>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" multiple>
@@ -75,3 +100,8 @@
 
 <a href="https://funix.udemy.com/course/create-dynamic-web-forms-with-jquery/learn/lecture/29196624#overview">
     link hoc</a>
+
+
+
+
+    
