@@ -1,0 +1,27 @@
+p {
+  
+  color: blue;
+}
+.pixel {
+    font-family: 'HP-211',sans-serif;
+    font-size: 20px;
+}
+.point {
+    font-family: 'HP-211',sans-serif;
+
+    font-size: 20pt;
+}
+.em {
+    font-size: 1em;
+}
+.rem {
+    font-size: 1rem;
+}
+footer{
+    font-family: 'HP-211',sans-serif;
+
+    font-size: 12pt;
+}
+html{
+    font-size: xx-large;
+}

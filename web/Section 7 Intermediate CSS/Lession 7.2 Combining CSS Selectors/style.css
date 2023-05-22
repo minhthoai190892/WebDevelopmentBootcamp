@@ -1,0 +1,25 @@
+/* Write your code here: */
+/* group selector */
+h1,h2{
+    color: blueviolet;
+}
+/* parent > child */
+.box>.done{
+    color: royalblue;
+}
+/* Descendant = Apply to a descendant of left side */
+.box li{
+    color: blue;
+}
+.box p {
+    color: red;
+}
+/* Chaining = Apply where ALL selector are true */
+li.done{
+    color: red;
+}
+/* Combining Combiners */
+ul p.done{
+    font-size: 0.5rem;
+}
+

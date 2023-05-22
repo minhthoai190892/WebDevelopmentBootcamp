@@ -1,0 +1,15 @@
+p{
+    color: red;
+}
+.container{
+    background-color: aqua;
+}
+.box{
+    background-color: blue;
+}
+.text-yellow {
+    color: yellow;
+}
+.text-black p{
+    color: black;
+}
