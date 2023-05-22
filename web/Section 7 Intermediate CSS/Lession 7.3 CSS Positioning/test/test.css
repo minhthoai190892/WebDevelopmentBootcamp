@@ -1,0 +1,32 @@
+.static{
+    position: static;
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    left: 50px;
+    top: 50px;
+}
+.relative{
+    position: relative;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    left: 50px;
+    top: 50px;
+}
+.absolute{
+    background-color:green;
+    height: 210px;
+    width: 210px;
+    left: 50px;
+    top: 50px;
+    position: absolute;
+}
+.fixed{
+    position: fixed;
+    background-color:yellow;
+    height: 200px;
+    width: 200px;
+    left: 50px;
+    top: 50px;
+}
