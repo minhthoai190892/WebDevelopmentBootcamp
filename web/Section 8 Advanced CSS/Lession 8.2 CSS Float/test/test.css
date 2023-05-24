@@ -1,0 +1,13 @@
+.img1{
+    height: 300px;
+    float: right;
+    width: 500px;
+}
+.img2{
+    height: 300px;
+    float: left;
+    width: 500px;
+}
+footer{
+    clear: both;
+}
