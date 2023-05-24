@@ -1,0 +1,31 @@
+.grid-container{
+    /* hiển thị dạng lưới */
+    display: grid;
+    /* chia làm 2 cột */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 200px 100px;
+    gap: 30px;
+
+
+}
+.card{
+    background-color: blue;
+}
+.first{
+    grid-column: span 2;
+}
+.flexbox-container{
+display: flex;
+}
+.flexbox-container .card{
+    background-color: blue;
+    border: 30px solid red;
+    height: 100px;
+    flex: 1;
+}
+.flexbox-container .first{
+    flex: 2;
+}
+.flexbox-container .second{
+    flex: 3;
+}
