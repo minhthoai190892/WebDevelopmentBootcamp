@@ -1,0 +1,62 @@
+div{
+    border: 1px solid red;
+}
+.one{
+    float: left;
+    width: 100%;
+}
+.one  img{
+    float: right;
+    width: 100px;
+}
+.one p{
+    float: left;
+    width: 100px;
+    border: 1px solid red;
+}
+.two{
+    float: left;
+    width: 25%;
+}   
+.three{
+    float: left;    
+    width: 25%;
+}
+footer{
+    clear: both;
+}
+img{
+    height: 100px;
+    width: 200px;
+}
+.test{
+    clear: both;
+}
+.test img{
+    float: left;
+}
+.test p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Flex Box */
+
+.container{
+    display: flex;
+    gap: 10px;
+}
+.container > .flex-one img{
+    float: left;
+    padding: 10px;
+}
+.container > .flex-one p{
+    margin: 0;
+
+}
+.test-flex{
+    display: flex;
+    gap: 10px;
+    color: red;
+}
