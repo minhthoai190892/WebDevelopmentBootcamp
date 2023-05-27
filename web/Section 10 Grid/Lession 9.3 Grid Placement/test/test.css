@@ -1,0 +1,24 @@
+.container {
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.item {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cowboy{
+    background-color: aqua;
+    grid-column: span 2;
+}
+.astronaut{
+    background-color: blanchedalmond;
+    /* grid-row: span 2; */
+    order:1;
+}
