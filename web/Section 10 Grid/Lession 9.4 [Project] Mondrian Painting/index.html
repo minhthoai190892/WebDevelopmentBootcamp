@@ -41,9 +41,11 @@
     .item {
       background-color: #F0F1EC;
     }
-    .red{
+
+    .red {
       background-color: red;
     }
+
     .white1 {
       background-color: #F0F1EC;
       grid-column: span 3;
@@ -56,9 +58,21 @@
 
     .white3 {
       background-color: #F0F1EC;
-      grid-column: span 2;
-grid-row: span 2;
-/* grid-area: 2 / 2 / 4 /4 */
+      /* grid-column: span 2;
+      grid-row: span 2; */
+      /* 
+      1. grid-row-start: 2;
+      2. grid-column-start: 2;
+      3. grid-row-end: 4;
+      4. grid-column-end: 4; 
+      */
+      /* grid-area: 2 / 2 / 4 /4; */
+
+      
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
     }
 
     .blue {
@@ -70,10 +84,12 @@ grid-row: span 2;
       background-color: #F0F1EC;
       grid-row: span 2;
     }
-    .yellow{
-      background-color:  #F9D01E;
+
+    .yellow {
+      background-color: #F9D01E;
     }
-    .black{
+
+    .black {
       background-color: #232629;
     }
   </style>
