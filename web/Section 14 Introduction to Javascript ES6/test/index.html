@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nemo repudiandae animi. Explicabo odit minima et perspiciatis dolore veniam exercitationem ad odio at! Repellendus cum laboriosam ut quas, et laudantium.</p>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script>
+   var yourName = prompt("what is your name");
+   var yourNameLeng = yourName.length;
+   var yourNameUppercase = yourName.toUpperCase();
+   var yourNameSlice = yourName.slice(0,140);
+
+   alert("your name is: "+yourNameUppercase+" you have written "+yourNameLeng + " SLICE: ["+yourNameSlice+"]")
+   //    in tên viết hoa chữ cái đầu tiên
+  //  b1. cắt chữ cái đầu tiên và cho nó viết hoa
+    var firstNameUppercase = yourName.slice(0,1).toUpperCase();
+    // b2. cắt các chữ cái còn lại và cho nó viết thường
+    var restOfName = yourName.slice(1,yourName.length).toLowerCase();
+    // b3. nối 2 chuổi lại
+    var capitalisedName = firstNameUppercase+restOfName;
+    alert("your name is: "+capitalisedName)
+// dog age to human age Formula
+// humanAge = (dogAge-2)*4+21
+    var dogAge = prompt("How old is your dog: ")
+    var humanAge = (dogAge -2)*4+21
+    alert("Your dog is "+humanAge+" years old in human years.")
+
+
+    var x = prompt("x: ")//3
+    var y = x++;// 3
+    alert("y is: "+y)
+  </script>
+</body>
+
+</html>
