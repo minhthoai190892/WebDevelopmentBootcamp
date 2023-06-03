@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <!-- place navbar here -->
     </header>
     <main>
-
+        
     </main>
     <footer>
         <!-- place footer here -->
@@ -32,10 +32,15 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
     <script>
-        var a = 1550753
-        var b = 1558862//7910
-        var c = b-a;
-        // alert(c)
+       
+      function getMilk(money) {
+        // tính số lượng chai có thể mua 
+        // 1 chai =1.5$
+        var bottles = 1.5;
+        var result = money/1.5;
+        console.log("số lượng chai mua được là: "+Math.floor(result))
+      }
+      
     </script>
 </body>
 
