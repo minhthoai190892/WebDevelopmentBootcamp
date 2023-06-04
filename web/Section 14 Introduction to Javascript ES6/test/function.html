@@ -33,15 +33,35 @@
         </script>
     <script>
        
-      function getMilk(money) {
+      function getMilk(money,) {
         // tính số lượng chai có thể mua 
         // 1 chai =1.5$
         var bottles = 1.5;
         var result = money/1.5;
-        console.log("số lượng chai mua được là: "+Math.floor(result))
-      }
+        console.log("số lượng chai mua được là: "+Math.floor(calcBottles(money,1.5)));
       
+        return calcChange(money,1.5);
+      }
+      var chabe = getMilk(2);
+
+      function calcBottles(startInMoney,costPerBottle) {
+        var numberOfBottles =Math.floor(startInMoney/costPerBottle);
+        return numberOfBottles;
+      }
+      function calcChange(startInMoney,costPerBottle) {
+        return startInMoney%costPerBottle;
+      }
+
+      console.log(chabe);
+      function lifeInWeeks(age) {
+        var yearsRemaining =90-age;
+        var days = yearsRemaining*365;
+        var weeks = yearsRemaining*52;
+        var months = yearsRemaining*12;
+        console.log("You have "+days+" days, "+weeks+" weeks, and "+months+" months left.");
+      }
+      lifeInWeeks(12);
     </script>
 </body>
 
-</html>
+</html> 
