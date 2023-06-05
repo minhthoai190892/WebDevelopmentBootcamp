@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <!-- place navbar here -->
     </header>
     <main>
-        
+
     </main>
     <footer>
         <!-- place footer here -->
@@ -32,37 +32,39 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
     <script>
-       
-      function getMilk(money,) {
-        // tính số lượng chai có thể mua 
-        // 1 chai =1.5$
-        var bottles = 1.5;
-        var result = money/1.5;
-        console.log("số lượng chai mua được là: "+Math.floor(calcBottles(money,1.5)));
-      
-        return calcChange(money,1.5);
-      }
-      var chabe = getMilk(2);
+        var weight = prompt("What boy friend name");
+        var height = prompt("What boy friend name");
+        var n = Math.random();
+        n = Math.floor(n * 100) + 1;
+        // if (n > 70) {
 
-      function calcBottles(startInMoney,costPerBottle) {
-        var numberOfBottles =Math.floor(startInMoney/costPerBottle);
-        return numberOfBottles;
-      }
-      function calcChange(startInMoney,costPerBottle) {
-        return startInMoney%costPerBottle;
-      }
+        //     alert(boyFriend + " 💖 " + girlFriend + " " + n + "%" + " very love");
+        // } else {
+        //     alert(boyFriend + " 💖 " + girlFriend + " " + n + "%");
+        // }
+        function bmiCalculator(weight, height) {
 
-      console.log(chabe);
-      function lifeInWeeks(age) {
-        var yearsRemaining =90-age;
-        var days = yearsRemaining*365;
-        var weeks = yearsRemaining*52;
-        var months = yearsRemaining*12;
-        console.log("You have "+days+" days, "+weeks+" weeks, and "+months+" months left.");
-      
-      }
-      lifeInWeeks(12);
+            var bmi = Math.round(weight / Math.pow(height, 2));
+            var interpretation;
+
+            if (bmi < 18.5) {
+                interpretation = "Your BMI is " + bmi + ", so you are underweight.";
+            }
+
+            if (bmi >= 18.5 && bmi < 24.9) {
+                interpretation = "Your BMI is " + bmi + ", so you have a normal weight.";
+            }
+
+            if (bmi >= 25) {
+                interpretation = "Your BMI is " + bmi + ", so you are overweight.";
+            }
+
+            return interpretation;
+
+        }
+
+
     </script>
 </body>
 
-</html> 
+</html>
