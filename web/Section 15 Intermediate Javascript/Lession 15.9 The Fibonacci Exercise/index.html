@@ -11,8 +11,22 @@
 <body>
     <script>
         function fibonacciGenerator(n) {
+            var output = [];
+            if (n === 1) {
+                output = [0];
+            } else if (n === 2) {
+                output = [0, 1];
+            } else {
+                //đầu ra khi n>=3
+                output=[0, 1];
+                for (var index = 2; index < n; index++) {
+                    // tính tổng giá trị và thêm vào mảng
+                    output.push(output[output.length - 2] + output[output.length - 1]);
+                }
+            }
+            return output;
         }
-      console.log( fibonacciGenerator(5))
+        console.log(fibonacciGenerator(4))
     </script>
 </body>
 
